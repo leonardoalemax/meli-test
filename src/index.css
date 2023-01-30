@@ -1,27 +1,19 @@
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  --logo-url: url("https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.21.21/mercadolibre/logo-pt__large_plus.png");
+  --logo-mini-url: url("https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.21.21/mercadolibre/logo__small.png");
+  --primary-background-color: #fff159;
+  --secondary-background-color: #ededed;
+  --input-background-color: #fff;
+  --box-shadow-level-1: 0 1px 0 0 rgb(0 0 0 / 10%);
+  --box-shadow-level-2: 0 1px 2px 0 rgb(0 0 0 / 20%);
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  font-family: "Proxima Nova", -apple-system, Roboto, Arial, sans-serif;
   font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  color: #333;
+  text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -30,41 +22,9 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: var(--secondary-background-color);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+* {
+  box-sizing: border-box;
 }

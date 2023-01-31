@@ -13,7 +13,7 @@ function ShowcaseIten({
 	installments,
 }: IProduct) {
 	return (
-		<a className='meli-showcase-iten' href={`/items/${id}`}>
+		<a className='meli-showcase-iten' href={`items/${id}`}>
 			<div
 				data-index='0'
 				className='meli-showcase-iten-thumb'
@@ -32,7 +32,7 @@ function ShowcaseIten({
 				<h5>
 					{installments && (
 						<>
-              <span> em </span>
+							<span> em </span>
 							{installments?.quantity}x{" "}
 							{formatCurrency(
 								installments?.amount,

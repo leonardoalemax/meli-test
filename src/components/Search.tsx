@@ -12,7 +12,7 @@ function Search() {
 	}, [query]);
 
 	return (
-		<form className='meli-search' action='/items'>
+		<form className='meli-search' action='items'>
 			<input
 				type='text'
 				className='meli-search-input'

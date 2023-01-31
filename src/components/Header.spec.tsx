@@ -22,12 +22,12 @@ test("Should render Default state of Header component", () => {
           >
             <a
               class="meli-logo"
-              href="/"
+              href=""
             >
               Mercado Livre Brasil - Onde comprar e vender de Tudo
             </a>
             <form
-              action="/items"
+              action="items"
               class="meli-search"
             >
               <input

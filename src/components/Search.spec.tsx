@@ -6,16 +6,16 @@ import "@testing-library/jest-dom";
 import Search from "./Search";
 
 test("Should render Default state of Search component", () => {
-	const { baseElement } = render(
-		<Router>
-			<Search />
-		</Router>
-	);
-	expect(baseElement).toMatchInlineSnapshot(`
+  const { baseElement } = render(
+    <Router>
+      <Search />
+    </Router>
+  );
+  expect(baseElement).toMatchInlineSnapshot(`
     <body>
       <div>
         <form
-          action="/items"
+          action="items"
           class="meli-search"
         >
           <input

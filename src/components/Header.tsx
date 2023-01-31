@@ -6,7 +6,7 @@ function Header() {
 	return (
 		<div className='meli-header'>
 			<div className='meli-header-content'>
-				<a href='/' className='meli-logo'>
+				<a href='' className='meli-logo'>
 					Mercado Livre Brasil - Onde comprar e vender de Tudo
 				</a>
 				<Search />

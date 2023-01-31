@@ -71,7 +71,7 @@ test("Should render Showcase component with itens list", () => {
         >
           <a
             class="meli-showcase-iten"
-            href="/items/MLB3085491615"
+            href="items/MLB3085491615"
           >
             <div
               class="meli-showcase-iten-thumb"
@@ -112,7 +112,7 @@ test("Should render Showcase component with itens list", () => {
           </a>
           <a
             class="meli-showcase-iten"
-            href="/items/MLB3085491614"
+            href="items/MLB3085491614"
           >
             <div
               class="meli-showcase-iten-thumb"

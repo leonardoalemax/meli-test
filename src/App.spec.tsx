@@ -65,7 +65,9 @@ test("Should render Default state of App component", () => {
           </div>
           <div
             class="meli-content"
-          />
+          >
+            <p />
+          </div>
         </div>
       </div>
     </body>

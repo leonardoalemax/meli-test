@@ -15,4 +15,8 @@
 .meli-content {
   height: 100%;
   padding: 2rem;
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }

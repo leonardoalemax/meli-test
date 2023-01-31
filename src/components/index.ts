@@ -1,3 +1,4 @@
 import Header from "./Header";
+import Showcase from "./Showcase";
 
-export { Header };
+export { Header, Showcase };

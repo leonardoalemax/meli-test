@@ -12,13 +12,9 @@ function App() {
 			<Header />
 			<div className='meli-content'>
 				<Routes>
-					<Route path='/meli-test/items' element={<Itens />} />
-					<Route
-						path='/meli-test/items/:productId'
-						element={<Iten />}
-					/>
-					<Route path='/meli-test/' element={<p></p>} />
-					<Route path='*' element={<Navigate to='/meli-test/' />} />
+					<Route path='/items' element={<Itens />} />
+					<Route path='/items/:productId' element={<Iten />} />
+					<Route path='/' element={<p></p>} />
 				</Routes>
 			</div>
 		</div>

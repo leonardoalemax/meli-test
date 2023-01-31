@@ -41,6 +41,17 @@
   }
 }
 
+.meli-showcase-iten-description-title {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+}
+
+.meli-showcase-iten-valid {
+  width: 20px;
+}
+
 .meli-showcase-iten h1 {
   font-size: 24px;
   font-weight: 400;

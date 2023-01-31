@@ -2,6 +2,7 @@ import React from "react";
 import formatCurrency from "../function/formatCurrency";
 import IProduct from "../interfaces/product";
 import "./ShowcaseIten.css";
+import Trophie from "../assets/trophie.svg";
 
 function ShowcaseIten({
 	id,
@@ -30,8 +31,17 @@ function ShowcaseIten({
 			</div>
 			<div className='meli-showcase-iten-description'>
 				<div className='meli-showcase-iten-description-col'>
-					<h4>{title}</h4>
-					<h1>{formatCurrency(price, currency_id)}</h1>
+					<div className='meli-showcase-iten-description-title'>
+          <h4>{title}</h4>
+          {seller?.seller_reputation?.level_id === "5_green" && (
+							<img className="meli-showcase-iten-valid" src={Trophie} alt='Vendedor Válidado' />
+						)}
+          </div>
+					<h1>
+						{formatCurrency(price, currency_id)}{" "}
+						
+					</h1>
+         
 					<h5>
 						{installments && (
 							<>

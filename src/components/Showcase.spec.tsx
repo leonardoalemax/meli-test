@@ -92,11 +92,16 @@ test("Should render Showcase component with itens list", () => {
               <div
                 class="meli-showcase-iten-description-col"
               >
-                <h4>
-                  Test Item 1
-                </h4>
+                <div
+                  class="meli-showcase-iten-description-title"
+                >
+                  <h4>
+                    Test Item 1
+                  </h4>
+                </div>
                 <h1>
                   R$ 123.333,00
+                   
                 </h1>
                 <h5>
                   <span>
@@ -140,11 +145,16 @@ test("Should render Showcase component with itens list", () => {
               <div
                 class="meli-showcase-iten-description-col"
               >
-                <h4>
-                  Test Item 2
-                </h4>
+                <div
+                  class="meli-showcase-iten-description-title"
+                >
+                  <h4>
+                    Test Item 2
+                  </h4>
+                </div>
                 <h1>
                   R$ 102,00
+                   
                 </h1>
                 <h5 />
               </div>

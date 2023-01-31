@@ -15,7 +15,7 @@ test("Should render Default state of Search component", () => {
     <body>
       <div>
         <form
-          action="items"
+          action="/items"
           class="meli-search"
         >
           <input

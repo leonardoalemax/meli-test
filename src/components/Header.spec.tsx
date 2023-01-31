@@ -27,7 +27,7 @@ test("Should render Default state of Header component", () => {
               Mercado Livre Brasil - Onde comprar e vender de Tudo
             </a>
             <form
-              action="items"
+              action="/items"
               class="meli-search"
             >
               <input

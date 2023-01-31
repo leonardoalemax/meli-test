@@ -7,12 +7,12 @@ jest.mock("axios");
 const mockAxios = axios as jest.Mocked<typeof axios>;
 
 import "@testing-library/jest-dom";
-import Items from "./Items";
+import Itens from "./Itens";
 
-test("Should render loading state of Items component", () => {
+test("Should render loading state of Itens component", () => {
 	const { baseElement } = render(
 		<Router>
-			<Items />
+			<Itens />
 		</Router>
 	);
 	expect(baseElement).toMatchInlineSnapshot(`
@@ -26,14 +26,14 @@ test("Should render loading state of Items component", () => {
   `);
 });
 
-test("Should render Zero state of Items component", async () => {
+test("Should render Zero state of Itens component", async () => {
 	mockAxios.get.mockResolvedValueOnce({ data: { results: [] } });
 
 	await act(() => {
 		render(
 			<Router>
 				<div data-testid='itens-element'>
-					<Items />
+					<Itens />
 				</div>
 			</Router>
 		);

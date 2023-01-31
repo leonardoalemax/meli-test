@@ -1,9 +1,9 @@
 import React from "react";
 import formatCurrency from "../function/formatCurrency";
 import IProduct from "../interfaces/product";
-import "./Item.css";
+import "./ShowcaseIten.css";
 
-function Item({
+function ShowcaseIten({
 	id,
 	title,
 	thumbnail_id,
@@ -30,9 +30,9 @@ function Item({
 				<h4>{title}</h4>
 				<h1>{formatCurrency(price, currency_id)}</h1>
 				<h5>
-					<span> em </span>
 					{installments && (
 						<>
+              <span> em </span>
 							{installments?.quantity}x{" "}
 							{formatCurrency(
 								installments?.amount,
@@ -49,4 +49,4 @@ function Item({
 	);
 }
 
-export default Item;
+export default ShowcaseIten;

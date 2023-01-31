@@ -1,0 +1,13 @@
+.meli-showcase {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  background-color: var(--input-background-color);
+  border-radius: 4px;
+}
+
+.meli-showcase-zero-state {
+  padding: 2rem;
+  text-align: center;
+}

@@ -65,7 +65,8 @@
 			"testing-library"
 		],
 		"rules": {
-			"testing-library/no-unnecessary-act": "off"
+			"testing-library/no-unnecessary-act": "off",
+			"no-irregular-whitespace": "off"
 		},
 		"extends": [
 			"eslint:recommended",

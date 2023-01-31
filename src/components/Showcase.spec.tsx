@@ -1,4 +1,3 @@
-/*eslint no-irregular-whitespace: ["error", { "skipTemplates": true }]*/
 import React from "react";
 import { render } from "@testing-library/react";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -7,12 +6,12 @@ import "@testing-library/jest-dom";
 import Showcase from "./Showcase";
 
 test("Should render Default state of Showcase component", () => {
-	const { baseElement } = render(
-		<Router>
-			<Showcase itens={[]} />
-		</Router>
-	);
-	expect(baseElement).toMatchInlineSnapshot(`
+  const { baseElement } = render(
+    <Router>
+      <Showcase itens={[]} />
+    </Router>
+  );
+  expect(baseElement).toMatchInlineSnapshot(`
     <body>
       <div>
         <div
@@ -30,41 +29,41 @@ test("Should render Default state of Showcase component", () => {
 });
 
 test("Should render Showcase component with itens list", () => {
-	const { baseElement } = render(
-		<Router>
-			<Showcase
-				itens={[
-					{
-						id: "MLB3085491615",
-						title: "Test Item 1",
-						thumbnail_id: "THUMB123213",
-						price: 123333,
-						shipping: {
-							free_shipping: true,
-						},
-						installments: {
-							amount: 12333,
-							currency_id: "BRL",
-							quantity: 10,
-							rate: 0,
-						},
-					},
-					{
-						id: "MLB3085491614",
-						title: "Test Item 2",
-						thumbnail_id: "THUMB123215",
-						price: 102,
-						currency_id: "BRL",
-						shipping: {
-							free_shipping: false,
-						},
-					},
-				]}
-			/>
-		</Router>
-	);
+  const { baseElement } = render(
+    <Router>
+      <Showcase
+        itens={[
+          {
+            id: "MLB3085491615",
+            title: "Test Item 1",
+            thumbnail_id: "THUMB123213",
+            price: 123333,
+            shipping: {
+              free_shipping: true,
+            },
+            installments: {
+              amount: 12333,
+              currency_id: "BRL",
+              quantity: 10,
+              rate: 0,
+            },
+          },
+          {
+            id: "MLB3085491614",
+            title: "Test Item 2",
+            thumbnail_id: "THUMB123215",
+            price: 102,
+            currency_id: "BRL",
+            shipping: {
+              free_shipping: false,
+            },
+          },
+        ]}
+      />
+    </Router>
+  );
 
-	expect(baseElement).toMatchInlineSnapshot(`
+  expect(baseElement).toMatchInlineSnapshot(`
     <body>
       <div>
         <div
@@ -137,11 +136,7 @@ test("Should render Showcase component with itens list", () => {
               <h1>
                 R$ 102,00
               </h1>
-              <h5>
-                <span>
-                   em 
-                </span>
-              </h5>
+              <h5 />
             </div>
           </a>
         </div>

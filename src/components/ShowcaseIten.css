@@ -1,76 +1,76 @@
 .meli-showcase-iten {
-	text-decoration: none;
-	color: var(--primary-color);
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	width: 100%;
-	justify-content: space-between;
-	border-bottom: 1px solid var(--secondary-background-color);
+  text-decoration: none;
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--secondary-background-color);
 }
 
 .meli-showcase-iten:hover {
-	box-shadow: var(--box-shadow-level-2);
-	cursor: pointer;
+  box-shadow: var(--box-shadow-level-2);
+  cursor: pointer;
 }
 
 .meli-showcase-iten-thumb {
-	min-width: 160px;
-	height: 160px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
+  min-width: 160px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .meli-showcase-iten-thumb img {
-	object-fit: contain;
+  object-fit: contain;
 }
 
 .meli-showcase-iten-description {
-	width: 100%;
-	padding: 1rem;
-	display: flex;
-	justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 870px) {
-	.meli-showcase-iten-description {
-		flex-direction: column;
-	}
+  .meli-showcase-iten-description {
+    flex-direction: column;
+  }
 }
 
 .meli-showcase-iten h1 {
-	font-size: 24px;
-	font-weight: 400;
-	line-height: 1;
-	margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0;
 }
 
 .meli-showcase-iten h5 {
-	font-size: 14px;
-	font-weight: 400;
-	color: var(--success-color);
-	margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--success-color);
+  margin: 0 0 8px;
 }
 
 .meli-showcase-iten h5 span {
-	color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .meli-showcase-iten h4 {
-	font-size: 20px;
-	font-weight: 300;
-	line-height: 1.3;
-	color: var(--primary-color);
-	margin: 8px 0;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.3;
+  color: var(--primary-color);
+  margin: 8px 0;
 }
 
 .meli-showcase-iten-state {
-	background-color: var(--secondary-background-color);
-	padding: 2px 4px;
-	border-radius: 2px;
-	display: block;
-	width: max-content;
+  background-color: var(--secondary-background-color);
+  padding: 2px 4px;
+  border-radius: 2px;
+  display: block;
+  width: max-content;
 }

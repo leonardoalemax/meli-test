@@ -34,7 +34,7 @@ jobs:
               run: yarn --frozen-lockfile
 
             - name: Build all
-              run: yarn build
+              run: yarn build --base=/meli-test/
 
             - name: Upload production-ready build files
               uses: actions/upload-artifact@v2
@@ -42,7 +42,7 @@ jobs:
                   name: production-files
                   path: ./dist
     deploy:
-        name: Deploy
+        name: deploy
         needs: build
         runs-on: ubuntu-latest
         permissions:

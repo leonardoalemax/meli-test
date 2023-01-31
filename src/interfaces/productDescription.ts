@@ -7,7 +7,7 @@ export default interface IProductDescription {
 	shipping?: {
 		free_shipping: boolean;
 	};
-  permalink: string;
-  warranty: string;
+	permalink: string;
+	warranty: string;
 	plain_text: string;
 }

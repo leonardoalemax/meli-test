@@ -4,6 +4,7 @@ export default interface IProductDescription {
 	thumbnail_id: string;
 	price: number;
 	currency_id?: string;
+	category_id: string;
 	shipping?: {
 		free_shipping: boolean;
 	};

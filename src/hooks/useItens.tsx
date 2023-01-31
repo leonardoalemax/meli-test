@@ -3,9 +3,11 @@ import { useMemo } from "react";
 import { useLocation } from "react-router-dom";
 import useSWR from "swr";
 import IProduct from "../interfaces/product";
+import IProductCategory from "../interfaces/productCategory";
 
 const useItens = (): {
 	itens: IProduct[];
+	categories: IProductCategory[];
 	error: object;
 	isLoading: boolean;
 } => {
@@ -25,6 +27,9 @@ const useItens = (): {
 
 	return {
 		itens: data?.results,
+		categories: data?.filters?.filter(
+			(e: { id: string }) => e.id === "category"
+		)[0]?.values,
 		error,
 		isLoading,
 	};

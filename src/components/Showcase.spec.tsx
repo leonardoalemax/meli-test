@@ -15,6 +15,9 @@ test("Should render Default state of Showcase component", () => {
     <body>
       <div>
         <div
+          class="meli-breadcomb"
+        />
+        <div
           class="meli-showcase"
         >
           <div
@@ -66,6 +69,9 @@ test("Should render Showcase component with itens list", () => {
   expect(baseElement).toMatchInlineSnapshot(`
     <body>
       <div>
+        <div
+          class="meli-breadcomb"
+        />
         <div
           class="meli-showcase"
         >

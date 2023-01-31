@@ -6,28 +6,50 @@ import "@testing-library/jest-dom";
 import Description from "./Description";
 
 test("Should render Default state of Description component", () => {
-  const { baseElement } = render(
-    <Router>
-      <Description
-        iten={{
-          id: "MLB3085491614",
-          title: "Test Item 2",
-          thumbnail_id: "THUMB123215",
-          price: 102,
-          currency_id: "BRL",
-          plain_text: "DESCRIPTION",
-          warranty: "warranty",
-          shipping: {
-            free_shipping: false,
-          },
-          permalink: "MELI.COM",
-        }}
-      />
-    </Router>
-  );
-  expect(baseElement).toMatchInlineSnapshot(`
+	const { baseElement } = render(
+		<Router>
+			<Description
+				iten={{
+					id: "MLB3085491614",
+					title: "Test Item 2",
+					thumbnail_id: "THUMB123215",
+					price: 102,
+					currency_id: "BRL",
+					plain_text: "DESCRIPTION",
+					warranty: "warranty",
+					category_id: "CATID",
+					shipping: {
+						free_shipping: false,
+					},
+					permalink: "MELI.COM",
+				}}
+			/>
+		</Router>
+	);
+	expect(baseElement).toMatchInlineSnapshot(`
     <body>
       <div>
+        <div
+          class="meli-breadcomb"
+        >
+          <a
+            class="meli-breadcomb-iten"
+            href="/"
+          >
+            Busca
+          </a>
+          <span>
+             
+            &gt;
+             
+          </span>
+          <a
+            class="meli-breadcomb-iten"
+            href="/items?search=CATID"
+          >
+            CATID
+          </a>
+        </div>
         <div
           class="meli-product-description"
         >
@@ -83,28 +105,50 @@ test("Should render Default state of Description component", () => {
 });
 
 test("Should render Description component with free shipping", () => {
-  const { baseElement } = render(
-    <Router>
-      <Description
-        iten={{
-          id: "MLB3085491614",
-          title: "Test Item 2",
-          thumbnail_id: "THUMB123215",
-          price: 102,
-          currency_id: "BRL",
-          plain_text: "DESCRIPTION",
-          warranty: "warranty",
-          shipping: {
-            free_shipping: true,
-          },
-          permalink: "MELI.COM",
-        }}
-      />
-    </Router>
-  );
-  expect(baseElement).toMatchInlineSnapshot(`
+	const { baseElement } = render(
+		<Router>
+			<Description
+				iten={{
+					id: "MLB3085491614",
+					title: "Test Item 2",
+					category_id: "CATID",
+					thumbnail_id: "THUMB123215",
+					price: 102,
+					currency_id: "BRL",
+					plain_text: "DESCRIPTION",
+					warranty: "warranty",
+					shipping: {
+						free_shipping: true,
+					},
+					permalink: "MELI.COM",
+				}}
+			/>
+		</Router>
+	);
+	expect(baseElement).toMatchInlineSnapshot(`
     <body>
       <div>
+        <div
+          class="meli-breadcomb"
+        >
+          <a
+            class="meli-breadcomb-iten"
+            href="/"
+          >
+            Busca
+          </a>
+          <span>
+             
+            &gt;
+             
+          </span>
+          <a
+            class="meli-breadcomb-iten"
+            href="/items?search=CATID"
+          >
+            CATID
+          </a>
+        </div>
         <div
           class="meli-product-description"
         >

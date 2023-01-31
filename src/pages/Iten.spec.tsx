@@ -19,6 +19,27 @@ test("Should render loading state of Iten component", () => {
     <body>
       <div>
         <div
+          class="meli-breadcomb"
+        >
+          <a
+            class="meli-breadcomb-iten"
+            href="/"
+          >
+            Busca
+          </a>
+          <span>
+             
+            &gt;
+             
+          </span>
+          <a
+            class="meli-breadcomb-iten"
+            href="/items?search=undefined"
+          >
+            undefined
+          </a>
+        </div>
+        <div
           class="meli-product-description"
         >
           <div
@@ -72,6 +93,11 @@ test("Should render normal state of Iten component", async () => {
 			price: 102,
 			currency_id: "BRL",
 			warranty: "warranty",
+			filters: {
+				id: "category",
+				name: "category",
+				value: [],
+			},
 			shipping: {
 				free_shipping: true,
 			},
@@ -94,6 +120,27 @@ test("Should render normal state of Iten component", async () => {
     <div
       data-testid="iten-element"
     >
+      <div
+        class="meli-breadcomb"
+      >
+        <a
+          class="meli-breadcomb-iten"
+          href="/"
+        >
+          Busca
+        </a>
+        <span>
+           
+          &gt;
+           
+        </span>
+        <a
+          class="meli-breadcomb-iten"
+          href="/items?search=undefined"
+        >
+          undefined
+        </a>
+      </div>
       <div
         class="meli-product-description"
       >
@@ -164,6 +211,27 @@ test("Should render zero state of Iten component", async () => {
     <div
       data-testid="iten-element"
     >
+      <div
+        class="meli-breadcomb"
+      >
+        <a
+          class="meli-breadcomb-iten"
+          href="/"
+        >
+          Busca
+        </a>
+        <span>
+           
+          &gt;
+           
+        </span>
+        <a
+          class="meli-breadcomb-iten"
+          href="/items?search=undefined"
+        >
+          undefined
+        </a>
+      </div>
       <div
         class="meli-product-description"
       >

@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { Header } from "./components";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Itens from "./pages/Itens";
 import Iten from "./pages/Iten";

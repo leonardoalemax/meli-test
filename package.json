@@ -3,7 +3,7 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
-	"homepage": "https://leonardoalemax.github.io/meli-test/",
+	"homepage": "https://leonardoalemax.github.io/meli-test",
 	"scripts": {
 		"test": "react-scripts test",
 		"dev": "vite",

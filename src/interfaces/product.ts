@@ -7,6 +7,16 @@ export default interface IProduct {
 	shipping?: {
 		free_shipping: boolean;
 	};
+	seller?: {
+		seller_reputation?: {
+			level_id?: string;
+		};
+	};
+	seller_address?: {
+		state?: {
+			name?: string;
+		};
+	};
 	installments?: {
 		amount: number;
 		currency_id: string;

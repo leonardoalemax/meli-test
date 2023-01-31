@@ -89,25 +89,32 @@ test("Should render Showcase component with itens list", () => {
             <div
               class="meli-showcase-iten-description"
             >
-              <h4>
-                Test Item 1
-              </h4>
-              <h1>
-                R$ 123.333,00
-              </h1>
-              <h5>
-                <span>
-                   em 
-                </span>
-                10
-                x
-                 
-                R$ 12.333,00
-                 Sem Juros
-              </h5>
-              <h5>
-                Frete grátis
-              </h5>
+              <div
+                class="meli-showcase-iten-description-col"
+              >
+                <h4>
+                  Test Item 1
+                </h4>
+                <h1>
+                  R$ 123.333,00
+                </h1>
+                <h5>
+                  <span>
+                     em 
+                  </span>
+                  10
+                  x
+                   
+                  R$ 12.333,00
+                   Sem Juros
+                </h5>
+                <h5>
+                  Frete grátis
+                </h5>
+              </div>
+              <div
+                class="meli-showcase-iten-description-col"
+              />
             </div>
           </a>
           <a
@@ -130,13 +137,20 @@ test("Should render Showcase component with itens list", () => {
             <div
               class="meli-showcase-iten-description"
             >
-              <h4>
-                Test Item 2
-              </h4>
-              <h1>
-                R$ 102,00
-              </h1>
-              <h5 />
+              <div
+                class="meli-showcase-iten-description-col"
+              >
+                <h4>
+                  Test Item 2
+                </h4>
+                <h1>
+                  R$ 102,00
+                </h1>
+                <h5 />
+              </div>
+              <div
+                class="meli-showcase-iten-description-col"
+              />
             </div>
           </a>
         </div>

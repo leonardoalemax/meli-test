@@ -9,6 +9,8 @@ function ShowcaseIten({
 	thumbnail_id,
 	price,
 	currency_id,
+	seller,
+	seller_address,
 	shipping,
 	installments,
 }: IProduct) {
@@ -27,23 +29,31 @@ function ShowcaseIten({
 				/>
 			</div>
 			<div className='meli-showcase-iten-description'>
-				<h4>{title}</h4>
-				<h1>{formatCurrency(price, currency_id)}</h1>
-				<h5>
-					{installments && (
-						<>
-							<span> em </span>
-							{installments?.quantity}x{" "}
-							{formatCurrency(
-								installments?.amount,
-								installments?.currency_id
-							)}
-							{installments?.rate === 0 && " Sem Juros"}
-						</>
+				<div className='meli-showcase-iten-description-col'>
+					<h4>{title}</h4>
+					<h1>{formatCurrency(price, currency_id)}</h1>
+					<h5>
+						{installments && (
+							<>
+								<span> em </span>
+								{installments?.quantity}x{" "}
+								{formatCurrency(
+									installments?.amount,
+									installments?.currency_id
+								)}
+								{installments?.rate === 0 && " Sem Juros"}
+							</>
+						)}
+					</h5>
+					{shipping?.free_shipping && <h5>Frete grátis</h5>}
+				</div>
+				<div className='meli-showcase-iten-description-col'>
+					{seller_address?.state && (
+						<div className='meli-showcase-iten-state'>
+							{seller_address?.state?.name}
+						</div>
 					)}
-				</h5>
-
-				{shipping?.free_shipping && <h5>Frete grátis</h5>}
+				</div>
 			</div>
 		</a>
 	);
